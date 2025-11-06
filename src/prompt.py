@@ -13,6 +13,6 @@ system_prompt=(
 prompt=ChatPromptTemplate.from_messages(
     [
         ("system",system_prompt),
-        ("human","{input}")
+        ("human","previous chat:{chat_history}\n\nuser:{input}")
     ]
 )
